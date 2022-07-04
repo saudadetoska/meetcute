@@ -1,3 +1,47 @@
+:root {
+    --bg-color: #fffefd;
+}
+
+body {
+    /* default font-sizing */
+    font-size: 62.5%;
+    font-family: 'Merriweather', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 html {
-    background-color: red;
+    background-color: var(--bg-color);
+}
+
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+
+html {
+    text-align: center;
+    background-color: var(--bg-color);
+    font-family: 'Muli', sans-serif;
+}
+
+#users {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#users td,
+#users th {
+    border: 1px solid var(--bg-color);
+    padding: 8px;
+}
+
+#users th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #04aa6d;
+    color: white;
 }

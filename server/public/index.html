@@ -4,14 +4,60 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Noto Sans Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Merriweather Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Scripts and CSS -->
         <script src="/vendor/jquery.min.js"></script>
         <script src="./scripts/client.js" charset="UTF-8" async></script>
         <link href="./styles/style.css" rel="stylesheet" />
-        <title>Document</title>
+        <title>meetcute</title>
     </head>
     <body>
         <header>
-            <h1>Document</h1>
+            <h1>meetcute</h1>
+            <!-- <em>
+                The moment two individuals meet unplanned for the first time,
+                and form a future romantic relationship
+            </em> -->
+            <input id="firstName" placeholder="First Name" type="text" />
+            <input id="lastName" placeholder="Last Name" type="text" />
+            <label for="birthDate">Your Birth Day</label>
+            <input
+                id="birthDate"
+                placeholder="Birthdate"
+                type="date"
+                value="2004-01-01"
+                min="1900-01-01"
+                max="2004-01-01"
+            />
+            <button id="addUser" type="submit">Add User</button>
         </header>
+        <main>
+            <div>
+                <h1>meetcute users</h1>
+                <table id="users">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Birthdate</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </main>
     </body>
 </html>
